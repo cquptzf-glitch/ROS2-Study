@@ -1,0 +1,18 @@
+[Unit]
+Description=AMR ROS 2 C++ Production Stack
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=robot
+WorkingDirectory=/opt/robot/ros2_ws
+Environment="ROS_DOMAIN_ID=42"
+Environment="RMW_IMPLEMENTATION=rmw_fastrtps_cpp"
+Environment="FASTRTPS_DEFAULT_PROFILES_FILE=/opt/robot/ros2_ws/install/system_bringup/share/system_bringup/config/fastdds_tuning.xml"
+ExecStart=/bin/bash -c "source /opt/ros/jazzy/setup.bash && source /opt/robot/ros2_ws/install/setup.bash && exec ros2 launch chassis_core robot_bringup.launch.py robot_ns:=amr_01"
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

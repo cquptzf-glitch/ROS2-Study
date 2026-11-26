@@ -1,0 +1,8 @@
+{
+  "name": "C++ 开发者速通 ROS 2 研发工程师实战指南",
+  "description": "面向现代 C++17 与 CMake 开发者的 ROS 2（Humble / Jazzy / Lyrical Luth 2026 LTS）企业级研发速通与上岗面试交互式教学指南，内置 6 大交互式模拟器与 22 道高频面试精讲。",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

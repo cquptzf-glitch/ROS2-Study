@@ -1,0 +1,38 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug C++ Node: chassis_manager_node (GDB)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/install/chassis_core/lib/chassis_core/chassis_manager_node",
+      "args": ["--ros-args", "-p", "max_linear_mps:=1.5"],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [
+        {
+          "name": "ROS_DOMAIN_ID",
+          "value": "42"
+        },
+        {
+          "name": "AMENT_PREFIX_PATH",
+          "value": "${workspaceFolder}/install/chassis_core:${workspaceFolder}/install/chassis_interfaces:/opt/ros/jazzy"
+        },
+        {
+          "name": "LD_LIBRARY_PATH",
+          "value": "${workspaceFolder}/install/chassis_interfaces/lib:/opt/ros/jazzy/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu"
+        }
+      ],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "ROS 2: colcon build (Debug for GDB)"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+# Goal: 目标充电桩编号与最大对接耗时
+uint32 station_id
+float32 timeout_sec
+---
+# Result: 最终是否对接成功及残余误差
+bool success
+float32 final_alignment_error_mm
+string status_message
+---
+# Feedback: 实时对接阶段与剩余距离
+string current_phase
+float32 distance_remaining_m

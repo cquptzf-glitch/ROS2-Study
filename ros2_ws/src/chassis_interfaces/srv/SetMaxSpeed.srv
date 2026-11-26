@@ -1,0 +1,7 @@
+# 请求：设置底盘安全限速 (m/s)
+float64 max_linear_mps
+---
+# 响应：是否成功应用与当前生效限速
+bool accepted
+string message
+float64 applied_limit_mps

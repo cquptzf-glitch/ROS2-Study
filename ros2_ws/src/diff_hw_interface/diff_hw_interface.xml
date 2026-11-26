@@ -1,0 +1,9 @@
+<library path="diff_hw_interface">
+  <class name="diff_hw_interface/DiffBotSystemHardware"
+         type="diff_hw_interface::DiffBotSystemHardware"
+         base_class_type="hardware_interface::SystemInterface">
+    <description>
+      Industrial differential-drive CAN hardware plugin for ros2_control.
+    </description>
+  </class>
+</library>

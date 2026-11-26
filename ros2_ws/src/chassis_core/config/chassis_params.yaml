@@ -1,0 +1,5 @@
+/**:
+  ros__parameters:
+    max_linear_mps: 1.65
+    wheel_base_m: 0.44
+    use_sim_time: false
